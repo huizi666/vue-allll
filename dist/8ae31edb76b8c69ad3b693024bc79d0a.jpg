@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "img/banner.jpg?fc889c16afdd387c5d223d15afb19c34";

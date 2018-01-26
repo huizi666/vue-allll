@@ -1,0 +1,8 @@
+//配置babel的翻译器和编译规则
+{
+  "presets": [
+    ["env", {
+       "modules": false
+    }]
+  ]
+}
