@@ -1,20 +1,23 @@
 <template>
     <div id="app">
-        <img src="./images/banner.jpg" alt="logo" />
-        <span>{{msg}}</span>
-        <p class="test">test text</p>
+        <Header/>
+        <Nav/>
     </div>
 </template>
 <script>
 import Vue from 'vue'
-    export default {
-        name:'app',
-        data(){
-            return {
-                msg:"hello vue @@@@@@@@@@@@!!"
-            }
-        },
-    }
+import Header from './components/common/common-header.vue'
+import Nav from './components/common/common-nav.vue'
+
+export default {
+    name:'app',
+    components:{Header,Nav},
+    data(){
+        return {
+            msg:"hello vue2222@@@@@@@@@@@@!!"
+        }
+    },
+}
 </script>
 <style lang="less">
     #app{
