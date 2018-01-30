@@ -2,12 +2,15 @@
 aouther:huizi666
 version:1.0.0
 name:vue system
-naebar
+navbar
+*
 */
 <template>
-    <nav>
-      <router-link to="/home/:id">Go to Foo</router-link>
-      <router-link to="/home/:id">Go to Bar</router-link>
+    <nav class="common-nav">
+      <div class="nav-list">
+        <router-link class="nav-li" to="/home">home</router-link>
+        <router-link class="nav-li" to="/bestPick">每日优选</router-link>
+      </div>
       <router-view></router-view>
     </nav>
 </template>
@@ -24,7 +27,19 @@ export default {
 }
 </script>
 <style lang="less">
-    #app{
-        img{width:100px;}
+.common-nav{
+  width: 100%;
+  height: 800px;
+  background: rgb(193, 192, 172);
+  .nav-list{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-li{
+      padding: 8px;
     }
+  }
+}
 </style>

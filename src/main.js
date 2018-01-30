@@ -4,15 +4,17 @@ import routes from '@/router.js'
 import App from './app.vue'
 import './styles/main.css'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter,)
 
 const router = new VueRouter({
   routes
 })
 
-new Vue({
+var vm = new Vue({
   el:"#app",
   template:"<App/>",
   components:{App},
-  router
+  router,
+  data:{
+  }
 })
