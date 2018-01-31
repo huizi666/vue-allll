@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+      <Header/>
       <router-view></router-view>
     </div>
 </template>
@@ -7,11 +8,12 @@
 import Vue from 'vue'
 import Index from '@/view/index.vue'
 import Login from '@/view/login.vue'
+import Header from '@/components/common/common-header.vue'
 import vm from '@/vuex'
 
 export default {
   name:'app',
-  components:{Index,Login},
+  components:{Index,Login,Header},
   data(){
       return {
           msg:"hello vue2222@@@@@@@@@@@@!!",

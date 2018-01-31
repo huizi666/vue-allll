@@ -5,7 +5,7 @@
       <div class="">
         <span >
           <a v-if="!userLogo" v-on:click="loginAlert" >登陆</a>
-          <a v-else>头像</a>
+          <a v-else v-on:click="loginAlert" >头像</a>
         </span>
         <span>|</span>
         <span>关注微信公众号</span>
@@ -29,8 +29,12 @@ export default {
   },
   methods:{
     loginAlert(){
-      console.log(this.$route)
-      this.$router.push('/login')
+      let cookie = localStorage.getItem('userName')
+      if(cookie){
+        this.$router.push('/userInfo')
+      }else if (!cookie) {
+        this.$router.push('/login')
+      }
     }
   },
   mounted(){
