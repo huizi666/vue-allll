@@ -3,7 +3,10 @@
     <header class="common-header">
       <h1><span>AS</span>  be  with  you forever .. </h1>
       <div class="">
-        <span v-on:click="loginAlert"><a >登陆</a></span>
+        <span >
+          <a v-if="!userLogo" v-on:click="loginAlert" >登陆</a>
+          <a v-else>头像</a>
+        </span>
         <span>|</span>
         <span>关注微信公众号</span>
       </div>
@@ -20,15 +23,21 @@ export default {
   data(){
       return {
           msg:"logo login username www",
+          userLogo:false,
 
       }
   },
   methods:{
     loginAlert(){
-      console.log(222)
+      console.log(this.$route)
+      this.$router.push('/login')
     }
   },
-  mount:{
+  mounted(){
+    let cookie = localStorage.getItem('userName')
+    if(cookie){
+      this.userLogo = true;
+    }
   }
 }
 </script>

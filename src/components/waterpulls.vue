@@ -1,6 +1,6 @@
 
 <template>
-<article>this is home</article>
+<article>this is 每日优选</article>
 </template>
 <script>
 import Vue from 'vue'
