@@ -14,7 +14,5 @@ import Vue from 'vue'
     }
 </script>
 <style lang="less">
-    #app{
-        img{width:100px;}
-    }
+
 </style>

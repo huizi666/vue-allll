@@ -31,14 +31,14 @@ export default {
       }
     },
     mounted(){
-      console.log(this.$route)
+      //console.log(this.$route)
     }
 }
 </script>
 <style lang="less">
 .common-nav{
   width: 100%;
-  height: 100px;
+  height: auto;
   background: rgb(193, 192, 172);
   .nav-list{
     width: 100%;

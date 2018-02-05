@@ -33,7 +33,7 @@ export default {
    //   this.loginShow=false
    //   // ...
    //  })
- console.log(this.$route)
+ //console.log(this.$route)
  },
 }
 </script>

@@ -21,15 +21,14 @@ var vm = new Vue({
 
 router.beforeEach((to, from, next) => {
   let cookie = localStorage.getItem('userName')
+  //cookie不存在则跳转到登录，若存在则正常跳转到目的路由上
   if(!cookie){
-    console.log(to);
-    console.log(from);
-    console.log(next);
-    console.log(router);
-    console.log(cookie);
+    // console.log(to);
+    // console.log(from);
+    // console.log(next);
+    // console.log(router);
   }else {
     if(from.path == "/login"){
-      console.log(cookie);
       console.log("已经登录啦~");
     }
   }

@@ -1,10 +1,11 @@
 
 import App from '@/app.vue'
 import Home from '@/components/home.vue'
-import Pick from '@/components/waterpulls.vue'
+import Pick from '@/components/pick.vue'
 import Login from '@/view/login.vue'
 import Index from '@/view/index.vue'
 import UserInfo from '@/view/userInfo.vue'
+import ShoppingCar from '@/view/shoppingCar.vue'
 
 
 
@@ -17,6 +18,7 @@ var routes = [
     ]
   },
   { path: '/login', component: Login},
-  { path: '/userInfo', component: UserInfo}
+  { path: '/userInfo', component: UserInfo},
+  { path: '/shoppingCar', component: ShoppingCar}
   ]
 export default routes;

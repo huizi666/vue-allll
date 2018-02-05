@@ -32,7 +32,7 @@ export default {
   methods:{
     loginSubmit(){
       var that = this
-      console.log(that.userName)
+      //console.log(that.userName)
       if(!that.userName || !that.passWord){
         alert('请输入用户名密码')
         return
